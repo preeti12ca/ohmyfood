@@ -1,0 +1,153 @@
+.back{
+    position: absolute;
+    left:35px;
+    top:25px;
+}
+.featured{
+    height:200px;
+    img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+}
+
+.page-body{
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+}
+.details{
+    padding: 20px;
+
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 9;
+    background-color: #f5f5f5;
+}
+.heading{
+    color:#565656;
+    margin-top: 15px;
+    h3 span{
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            width:60%;
+            left:0;
+            bottom: -5px;
+            height: 3px;
+            background: #99E2D0;
+        }
+    }
+}
+
+
+.main-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu-section{
+width:30%;
+}
+.entree{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top:30px;
+    border-radius: 15px;
+    position: relative;
+    opacity: 0;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px 0 #8b8b8b;
+    &:hover{
+        cursor: pointer;
+        h3, p {
+            white-space: nowrap; 
+      width: 100px; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .check{
+        right:0;
+        i{
+            transform: rotate(360deg);
+        }
+    }
+    .entree-price{
+        margin-right: 80px;
+    }
+    }
+}
+
+.entree-price{
+    transition: .5s ease-in;
+}
+.check{
+    position: absolute;
+    right:-70px;
+    @include flexprop;
+    height: 100%;
+    width: 70px;
+    background: #99e2d0;
+    color: #fff;
+    transition: .5s ease-in;
+    i{
+        background: #fff;
+        color:#99e2d0;
+        padding: 5px;
+        border-radius: 50%;
+        transition: 0.8s ease-in;
+
+    }
+}
+
+
+.order-btn{
+    background: linear-gradient(#FF79DA, #9356DC);
+    width:150px;
+    padding:15px 25px;
+    display: block;
+    margin:25px auto;
+    color:#fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 1px 4px 6px #888888;
+    }
+
+}
+@keyframes slide{
+0%{
+    opacity: 0;
+    margin-top: 30px;		
+}
+20%{
+    opacity:.5;
+}
+49%{
+    opacity: 1;
+}
+100%{
+    opacity: 1;
+    margin-top: 25px;
+}
+}
+.one{
+animation: slide 2s forwards;
+animation-delay: 0.5s;
+}
+.two{
+animation: slide 1s forwards;
+animation-delay: 1s;
+}
+.three{
+animation: slide 1s forwards;
+animation-delay: 2s;
+}

@@ -1,2 +1,1 @@
-# ohmyfood
 index.html
