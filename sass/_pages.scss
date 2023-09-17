@@ -77,6 +77,7 @@ width:30%;
         right:0;
         i{
             transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
         }
     }
     .entree-price{
@@ -97,6 +98,7 @@ width:30%;
     background: #99e2d0;
     color: #fff;
     transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;;
     i{
         background: #fff;
         color:#99e2d0;

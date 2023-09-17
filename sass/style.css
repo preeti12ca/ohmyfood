@@ -107,6 +107,7 @@ body {
 }
 .entree:hover .check i {
   transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
 }
 .entree:hover .entree-price {
   margin-right: 80px;
@@ -127,6 +128,7 @@ body {
   background: #99e2d0;
   color: #fff;
   transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
 }
 .check i {
   background: #fff;
