@@ -80,13 +80,14 @@
 	
 	.btn{
 		background: linear-gradient(#FF79DA, #9356DC);
-		padding: 15px 25px;
+				padding: 15px 25px;
 		color:#fff;
 		border: none;
 		border-radius: 30px;
 		cursor: pointer;
 		&:hover{
 			box-shadow: 1px 4px 6px #888888;
+			background: linear-gradient(#e28ac9, #946ac7);
 		}
 	}
 

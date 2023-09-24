@@ -151,6 +151,7 @@ body {
 }
 .order-btn:hover {
   box-shadow: 1px 4px 6px #888888;
+  background: linear-gradient(#e28ac9, #946ac7);
 }
 
 @keyframes slide {
@@ -276,6 +277,7 @@ body {
 }
 .btn:hover {
   box-shadow: 1px 4px 6px #888888;
+  background: linear-gradient(#e28ac9, #946ac7);
 }
 
 #how {
